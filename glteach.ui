@@ -1,0 +1,1867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GLTeach</class>
+ <widget class="QMainWindow" name="GLTeach">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1263</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>GLTeach</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_19">
+    <item row="0" column="0">
+     <widget class="QCheckBox" name="checkBox">
+      <property name="text">
+       <string>Animate</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="resetButton">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="GLWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QGroupBox" name="Transforms">
+      <property name="title">
+       <string>Transform</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>x</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>y</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>z</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>eye</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDoubleSpinBox" name="eyeX">
+           <property name="minimum">
+            <double>-20.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>20.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.500000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QDoubleSpinBox" name="eyeY">
+           <property name="minimum">
+            <double>-20.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>20.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.500000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QDoubleSpinBox" name="eyeZ">
+           <property name="minimum">
+            <double>-20.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>20.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.500000000000000</double>
+           </property>
+           <property name="value">
+            <double>5.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>center</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QDoubleSpinBox" name="centerX">
+           <property name="minimum">
+            <double>-20.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>20.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.500000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QDoubleSpinBox" name="centerY">
+           <property name="minimum">
+            <double>-20.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>20.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.500000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QDoubleSpinBox" name="centerZ">
+           <property name="minimum">
+            <double>-20.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>20.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.500000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>up</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QDoubleSpinBox" name="upX">
+           <property name="minimum">
+            <double>-20.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>20.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.500000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QDoubleSpinBox" name="upY">
+           <property name="minimum">
+            <double>-20.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>20.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.500000000000000</double>
+           </property>
+           <property name="value">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QDoubleSpinBox" name="upZ">
+           <property name="minimum">
+            <double>-20.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>20.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.500000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>x</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>y</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_22">
+           <property name="text">
+            <string>z</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>eye</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLCDNumber" name="eyeXdisp"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLCDNumber" name="eyeYdisp"/>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLCDNumber" name="eyeZdisp"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>center</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLCDNumber" name="centerXdisp"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLCDNumber" name="centerYdisp"/>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLCDNumber" name="centerZdisp"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>up</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLCDNumber" name="upXdisp"/>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLCDNumber" name="upYdisp"/>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLCDNumber" name="upZdisp"/>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>fovy</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>zNear</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>zFar</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QDoubleSpinBox" name="fovySpinBox">
+           <property name="maximum">
+            <double>300.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>90.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDoubleSpinBox" name="zNearSpinBox">
+           <property name="value">
+            <double>0.100000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QDoubleSpinBox" name="zFarSpinBox">
+           <property name="value">
+            <double>99.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="2">
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_23">
+           <property name="text">
+            <string>fovy</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLCDNumber" name="zFardisp"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLCDNumber" name="zNeardisp"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLCDNumber" name="fovyDisp"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>zFar</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_24">
+           <property name="text">
+            <string>zNear</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>ScaleH</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>TranslateH</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>Deg of trans</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QSlider" name="verticalSlider">
+           <property name="minimum">
+            <number>-36</number>
+           </property>
+           <property name="maximum">
+            <number>36</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="5">
+          <widget class="QSlider" name="horizontalSlider">
+           <property name="minimum">
+            <number>-360</number>
+           </property>
+           <property name="maximum">
+            <number>360</number>
+           </property>
+           <property name="singleStep">
+            <number>1</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>RotateH</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>13</width>
+             <height>17</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="5">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>13</width>
+             <height>17</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="1" colspan="5">
+          <widget class="QSlider" name="scaleHSlider">
+           <property name="minimum">
+            <number>100</number>
+           </property>
+           <property name="maximum">
+            <number>300</number>
+           </property>
+           <property name="singleStep">
+            <number>1</number>
+           </property>
+           <property name="value">
+            <number>100</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QSlider" name="scaleVSlider">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1" colspan="5">
+          <widget class="QSlider" name="moveX">
+           <property name="minimum">
+            <number>-500</number>
+           </property>
+           <property name="maximum">
+            <number>500</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QSlider" name="MoveY">
+           <property name="minimum">
+            <number>-500</number>
+           </property>
+           <property name="maximum">
+            <number>500</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QDoubleSpinBox" name="degSpinBox">
+           <property name="value">
+            <double>5.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>RotateV</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>TranslateV</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>ScaleV</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QGroupBox" name="Light_Color">
+      <property name="title">
+       <string>Light And Color</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_18">
+       <item row="0" column="0" colspan="2">
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>Red</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>Green</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>Blue</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="label_42">
+           <property name="text">
+            <string>Alpha</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QSlider" name="MCRed">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSlider" name="MCGreen">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QSlider" name="MCBlue">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QSlider" name="MCAlpha">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="value">
+            <number>100</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="3">
+          <widget class="QLabel" name="label_29">
+           <property name="text">
+            <string>Material Color</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="2" colspan="2">
+        <layout class="QGridLayout" name="gridLayout_9">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_30">
+           <property name="text">
+            <string>Ambient Light Color</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_31">
+             <property name="text">
+              <string>Red</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_32">
+             <property name="text">
+              <string>Green</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_33">
+             <property name="text">
+              <string>Blue</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QSlider" name="ALCRed">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>20</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSlider" name="ALCGreen">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>20</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QSlider" name="ALCBlue">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>20</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="4">
+        <layout class="QGridLayout" name="gridLayout_11">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_34">
+           <property name="text">
+            <string>Specualr Light Color</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_35">
+             <property name="text">
+              <string>Red</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_36">
+             <property name="text">
+              <string>Green</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_37">
+             <property name="text">
+              <string>Blue</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QSlider" name="SLCRed">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>50</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSlider" name="SLCGreen">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>50</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QSlider" name="SLCBlue">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>50</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <layout class="QGridLayout" name="gridLayout_13">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_38">
+           <property name="text">
+            <string>Shininess</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <layout class="QGridLayout" name="gridLayout_14">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_39">
+             <property name="text">
+              <string>Red</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_40">
+             <property name="text">
+              <string>Green</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_41">
+             <property name="text">
+              <string>Blue</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QSlider" name="ShinRed">
+             <property name="minimum">
+              <number>0</number>
+             </property>
+             <property name="maximum">
+              <number>128</number>
+             </property>
+             <property name="value">
+              <number>50</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSlider" name="ShinGreen">
+             <property name="maximum">
+              <number>128</number>
+             </property>
+             <property name="value">
+              <number>50</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QSlider" name="ShinBlue">
+             <property name="maximum">
+              <number>128</number>
+             </property>
+             <property name="value">
+              <number>50</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1" colspan="3">
+        <layout class="QGridLayout" name="gridLayout_15">
+         <item row="1" column="0">
+          <layout class="QGridLayout" name="gridLayout_16">
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_46">
+             <property name="text">
+              <string>Blue</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_44">
+             <property name="text">
+              <string>Red</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QSlider" name="DiffBlue">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>80</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QSlider" name="DiffRed">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>80</number>
+             </property>
+             <property name="sliderPosition">
+              <number>80</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSlider" name="DiffGreen">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>80</number>
+             </property>
+             <property name="sliderPosition">
+              <number>80</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_45">
+             <property name="text">
+              <string>Green</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_43">
+           <property name="text">
+            <string>Diffuse Light Color</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0" colspan="3">
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="2" column="1">
+          <widget class="QSlider" name="Light0Y">
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>1</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="2">
+          <widget class="QSlider" name="Light0X">
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_48">
+           <property name="text">
+            <string>y</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_47">
+           <property name="text">
+            <string>x</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <widget class="QLabel" name="label_50">
+           <property name="text">
+            <string>Light 0 Pos</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_49">
+           <property name="text">
+            <string>z</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QSlider" name="Light0Z">
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>5</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="3" colspan="2">
+        <layout class="QGridLayout" name="gridLayout_17">
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_52">
+           <property name="text">
+            <string>y</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_54">
+           <property name="text">
+            <string>x</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="2">
+          <widget class="QSlider" name="Light1X">
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>-3</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_53">
+           <property name="text">
+            <string>z</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSlider" name="Light1Y">
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>4</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <widget class="QLabel" name="label_51">
+           <property name="text">
+            <string>Light 1 Pos</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QSlider" name="Light1Z">
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>-5</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+      <zorder>MCRed</zorder>
+      <zorder>MCGreen</zorder>
+      <zorder>MCBlue</zorder>
+      <zorder>label_26</zorder>
+      <zorder>label_27</zorder>
+      <zorder>label_28</zorder>
+      <zorder>label_29</zorder>
+      <zorder>layoutWidget</zorder>
+      <zorder>layoutWidget_2</zorder>
+      <zorder>layoutWidget_3</zorder>
+      <zorder>MCAlpha</zorder>
+      <zorder>label_42</zorder>
+      <zorder>layoutWidget_4</zorder>
+      <zorder>label_29</zorder>
+      <zorder>label_43</zorder>
+      <zorder>Light0X</zorder>
+      <zorder>Light0Y</zorder>
+      <zorder>Light0Z</zorder>
+      <zorder>label_47</zorder>
+      <zorder>label_48</zorder>
+      <zorder>label_49</zorder>
+      <zorder>label_50</zorder>
+      <zorder>layoutWidget_5</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GLWidget</class>
+   <extends>QWidget</extends>
+   <header>glwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>rotateH()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>685</x>
+     <y>460</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>436</x>
+     <y>418</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>verticalSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>rotateV()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>542</x>
+     <y>348</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>684</x>
+     <y>360</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>animate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>24</x>
+     <y>18</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>50</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fovySpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>updateFovy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>497</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zNearSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>updatezNear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>573</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>627</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zFarSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>updatezFar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>648</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>775</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>degSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setDeg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>488</x>
+     <y>258</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>446</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>eyeX</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setEyeX()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>522</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>517</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>eyeY</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setEyeY()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>585</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>661</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>eyeZ</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setEyeZ()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>648</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>775</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>centerX</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setCenterX()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>522</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>centerY</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setCenterY()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>585</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>696</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>centerZ</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setCenterZ()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>648</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>800</x>
+     <y>24</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>upX</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setUpX()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>522</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>591</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>upY</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setUpY()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>585</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>680</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>upZ</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setUpZ()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>648</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>825</x>
+     <y>23</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scaleHSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>callScale()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>522</x>
+     <y>478</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>517</x>
+     <y>427</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MCRed</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>938</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>947</x>
+     <y>17</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MCGreen</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>958</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1038</x>
+     <y>15</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MCBlue</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>993</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>931</x>
+     <y>14</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MCAlpha</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1020</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1147</x>
+     <y>10</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ALCRed</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1063</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>888</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ALCGreen</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1086</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>596</x>
+     <y>459</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ALCBlue</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1123</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>624</x>
+     <y>468</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SLCRed</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1161</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>677</x>
+     <y>442</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SLCGreen</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1189</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>657</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SLCBlue</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1226</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>687</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ShinRed</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>937</x>
+     <y>276</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>721</x>
+     <y>500</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ShinGreen</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>960</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>742</x>
+     <y>510</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ShinBlue</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>994</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>769</x>
+     <y>516</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DiffRed</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1039</x>
+     <y>269</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>797</x>
+     <y>526</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DiffGreen</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1069</x>
+     <y>269</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>470</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DiffBlue</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1107</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>478</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light0Y</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>971</x>
+     <y>407</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>550</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light0Z</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>992</x>
+     <y>405</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>563</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light0X</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>977</x>
+     <y>506</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>579</x>
+     <y>498</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1Y</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1138</x>
+     <y>407</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>505</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1Z</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1161</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>609</x>
+     <y>515</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1X</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>setMatColors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1149</x>
+     <y>503</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>626</x>
+     <y>522</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MoveY</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>moveXY()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>615</x>
+     <y>428</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>528</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>moveX</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GLTeach</receiver>
+   <slot>moveXY()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>500</x>
+     <y>507</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>290</x>
+     <y>526</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>rotateH()</slot>
+  <slot>rotateV()</slot>
+  <slot>up()</slot>
+  <slot>animate()</slot>
+  <slot>updateFovy()</slot>
+  <slot>updatezNear()</slot>
+  <slot>updatezFar()</slot>
+  <slot>setDeg()</slot>
+  <slot>setEyeX()</slot>
+  <slot>setEyeY()</slot>
+  <slot>setEyeZ()</slot>
+  <slot>setCenterX()</slot>
+  <slot>setCenterY()</slot>
+  <slot>setCenterZ()</slot>
+  <slot>setUpX()</slot>
+  <slot>setUpY()</slot>
+  <slot>setUpZ()</slot>
+  <slot>callScale()</slot>
+  <slot>setMatColors()</slot>
+  <slot>moveXY()</slot>
+ </slots>
+</ui>
